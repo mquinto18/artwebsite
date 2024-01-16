@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guitar Drawing</title>
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.guitar {
+    width: 200px;
+    height: 500px;
+    background-color: #835c3b;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.body {
+    width: 100%;
+    height: 70%;
+    background-color: #835c3b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.neck {
+    width: 20px;
+    height: 100%;
+    background-color: #5c422d;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    background-color: #5c422d;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    border-radius: 50%;
+}
+
+.strings {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.string {
+    width: 2px;
+    height: 40%;
+    background-color: #000;
+}
+
+</style>
+<body>
+    <div class="guitar">
+        <div class="body"></div>
+        <div class="neck">
+            <div class="head"></div>
+        </div>
+        <div class="strings">
+            <div class="string"></div>
+            <div class="string"></div>
+            <div class="string"></div>
+            <div class="string"></div>
+            <div class="string"></div>
+            <div class="string"></div>
+        </div>
+    </div>
+</body>
+</html>
